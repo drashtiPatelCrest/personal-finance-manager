@@ -1,0 +1,1594 @@
+{
+  "@@locale": "en",
+  "appTitle": "Personal Finance Manager",
+  "@appTitle": {
+    "description": "The application title"
+  },
+  "dashboardTitle": "Dashboard",
+  "@dashboardTitle": {
+    "description": "Dashboard screen title"
+  },
+  "dashboardTotalIncomeLabel": "Total income",
+  "@dashboardTotalIncomeLabel": {
+    "description": "Dashboard total income metric label"
+  },
+  "dashboardTotalExpenseLabel": "Total expense",
+  "@dashboardTotalExpenseLabel": {
+    "description": "Dashboard total expense metric label"
+  },
+  "dashboardTotalSavingsLabel": "Total savings",
+  "@dashboardTotalSavingsLabel": {
+    "description": "Dashboard total savings metric label"
+  },
+  "dashboardNetBalanceLabel": "Net balance",
+  "@dashboardNetBalanceLabel": {
+    "description": "Dashboard net balance metric label"
+  },
+  "dashboardBudgetUsageTitle": "Budget usage",
+  "@dashboardBudgetUsageTitle": {
+    "description": "Dashboard budget usage section title"
+  },
+  "dashboardActiveGoalsTitle": "Active goals ({count})",
+  "@dashboardActiveGoalsTitle": {
+    "description": "Dashboard active goals section title",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "dashboardIncomeExpenseChartTitle": "Income vs expense",
+  "@dashboardIncomeExpenseChartTitle": {
+    "description": "Dashboard income vs expense chart title"
+  },
+  "dashboardMonthlyTrendChartTitle": "Monthly trend",
+  "@dashboardMonthlyTrendChartTitle": {
+    "description": "Dashboard monthly trend chart title"
+  },
+  "dashboardCategoryChartTitle": "Spending by category",
+  "@dashboardCategoryChartTitle": {
+    "description": "Dashboard category distribution chart title"
+  },
+  "dashboardChartEmptyMessage": "No data for the selected period.",
+  "@dashboardChartEmptyMessage": {
+    "description": "Dashboard chart empty state message"
+  },
+  "dashboardQuickActionsTitle": "Quick actions",
+  "@dashboardQuickActionsTitle": {
+    "description": "Dashboard quick actions section title"
+  },
+  "dashboardQuickAddTransaction": "Add transaction",
+  "@dashboardQuickAddTransaction": {
+    "description": "Dashboard quick action to add transaction"
+  },
+  "dashboardQuickAddBudget": "Add budget",
+  "@dashboardQuickAddBudget": {
+    "description": "Dashboard quick action to add budget"
+  },
+  "dashboardQuickAddGoal": "Add goal",
+  "@dashboardQuickAddGoal": {
+    "description": "Dashboard quick action to add goal"
+  },
+  "dashboardQuickViewTransactions": "View transactions",
+  "@dashboardQuickViewTransactions": {
+    "description": "Dashboard quick action to view transactions"
+  },
+  "dashboardRangeThisMonth": "This month",
+  "@dashboardRangeThisMonth": {
+    "description": "Dashboard date range filter this month"
+  },
+  "dashboardRangeLastMonth": "Last month",
+  "@dashboardRangeLastMonth": {
+    "description": "Dashboard date range filter last month"
+  },
+  "dashboardRangeLastThreeMonths": "Last 3 months",
+  "@dashboardRangeLastThreeMonths": {
+    "description": "Dashboard date range filter last three months"
+  },
+  "dashboardRangeLastSixMonths": "Last 6 months",
+  "@dashboardRangeLastSixMonths": {
+    "description": "Dashboard date range filter last six months"
+  },
+  "dashboardRangeThisYear": "This year",
+  "@dashboardRangeThisYear": {
+    "description": "Dashboard date range filter this year"
+  },
+  "dashboardRefreshAction": "Refresh",
+  "@dashboardRefreshAction": {
+    "description": "Dashboard refresh action"
+  },
+  "dashboardViewAllAction": "View all",
+  "@dashboardViewAllAction": {
+    "description": "Dashboard view all action"
+  },
+  "dashboardEmptyTitle": "Your dashboard is empty",
+  "@dashboardEmptyTitle": {
+    "description": "Dashboard empty state title"
+  },
+  "dashboardEmptyMessage": "Add transactions, budgets, or goals to see your financial overview.",
+  "@dashboardEmptyMessage": {
+    "description": "Dashboard empty state message"
+  },
+  "dashboardRangeEmptyTitle": "No data for this period",
+  "@dashboardRangeEmptyTitle": {
+    "description": "Dashboard empty state when selected date range has no data"
+  },
+  "dashboardRangeEmptyMessage": "Try a different date range or add transactions for this period.",
+  "@dashboardRangeEmptyMessage": {
+    "description": "Dashboard empty state message when date range has no data"
+  },
+  "dashboardErrorUnknown": "Something went wrong. Please try again.",
+  "@dashboardErrorUnknown": {
+    "description": "Unknown dashboard error"
+  },
+  "reportListTitle": "Financial Reports",
+  "@reportListTitle": {
+    "description": "Reports list screen title"
+  },
+  "reportTypeMonthly": "Monthly Report",
+  "@reportTypeMonthly": {
+    "description": "Monthly report type label"
+  },
+  "reportTypeYearly": "Yearly Report",
+  "@reportTypeYearly": {
+    "description": "Yearly report type label"
+  },
+  "reportTypeCategory": "Category Report",
+  "@reportTypeCategory": {
+    "description": "Category report type label"
+  },
+  "reportTypeBudget": "Budget Analysis",
+  "@reportTypeBudget": {
+    "description": "Budget analysis report type label"
+  },
+  "reportTypeGoal": "Goal Progress",
+  "@reportTypeGoal": {
+    "description": "Goal progress report type label"
+  },
+  "reportTypeMonthlyDescription": "Income, expenses, and trends for a selected month.",
+  "@reportTypeMonthlyDescription": {
+    "description": "Monthly report type description"
+  },
+  "reportTypeYearlyDescription": "Annual overview with monthly breakdown.",
+  "@reportTypeYearlyDescription": {
+    "description": "Yearly report type description"
+  },
+  "reportTypeCategoryDescription": "Spending breakdown by expense category.",
+  "@reportTypeCategoryDescription": {
+    "description": "Category report type description"
+  },
+  "reportTypeBudgetDescription": "Budget usage, warnings, and exceeded limits.",
+  "@reportTypeBudgetDescription": {
+    "description": "Budget analysis report type description"
+  },
+  "reportTypeGoalDescription": "Savings goals progress and completion status.",
+  "@reportTypeGoalDescription": {
+    "description": "Goal progress report type description"
+  },
+  "reportRangeThisMonth": "This month",
+  "@reportRangeThisMonth": {
+    "description": "Report date range preset"
+  },
+  "reportRangeLastMonth": "Last month",
+  "@reportRangeLastMonth": {
+    "description": "Report date range preset"
+  },
+  "reportRangeLastThreeMonths": "Last 3 months",
+  "@reportRangeLastThreeMonths": {
+    "description": "Report date range preset"
+  },
+  "reportRangeLastSixMonths": "Last 6 months",
+  "@reportRangeLastSixMonths": {
+    "description": "Report date range preset"
+  },
+  "reportRangeThisYear": "This year",
+  "@reportRangeThisYear": {
+    "description": "Report date range preset"
+  },
+  "reportTotalIncomeLabel": "Total income",
+  "@reportTotalIncomeLabel": {
+    "description": "Report summary metric"
+  },
+  "reportTotalExpenseLabel": "Total expense",
+  "@reportTotalExpenseLabel": {
+    "description": "Report summary metric"
+  },
+  "reportNetBalanceLabel": "Net balance",
+  "@reportNetBalanceLabel": {
+    "description": "Report summary metric"
+  },
+  "reportTransactionCountLabel": "Transactions",
+  "@reportTransactionCountLabel": {
+    "description": "Report summary metric"
+  },
+  "reportTotalSavingsLabel": "Total savings",
+  "@reportTotalSavingsLabel": {
+    "description": "Report summary metric for goals"
+  },
+  "reportTotalBudgetsLabel": "Total budgets",
+  "@reportTotalBudgetsLabel": {
+    "description": "Report summary metric for budgets"
+  },
+  "reportTotalSpentLabel": "Total spent",
+  "@reportTotalSpentLabel": {
+    "description": "Report summary metric for budgets"
+  },
+  "reportExceededBudgetsLabel": "Exceeded",
+  "@reportExceededBudgetsLabel": {
+    "description": "Report exceeded budgets count"
+  },
+  "reportWarningBudgetsLabel": "At risk",
+  "@reportWarningBudgetsLabel": {
+    "description": "Report warning budgets count"
+  },
+  "reportActiveGoalsLabel": "Active goals",
+  "@reportActiveGoalsLabel": {
+    "description": "Report active goals count"
+  },
+  "reportCompletedGoalsLabel": "Completed",
+  "@reportCompletedGoalsLabel": {
+    "description": "Report completed goals count"
+  },
+  "reportBudgetSectionTitle": "Budget usage",
+  "@reportBudgetSectionTitle": {
+    "description": "Report budget section title"
+  },
+  "reportGoalSectionTitle": "Goal progress",
+  "@reportGoalSectionTitle": {
+    "description": "Report goal section title"
+  },
+  "reportEmptyTitle": "No report data",
+  "@reportEmptyTitle": {
+    "description": "Report empty state title"
+  },
+  "reportEmptyMessage": "Adjust filters or add data to generate this report.",
+  "@reportEmptyMessage": {
+    "description": "Report empty state message"
+  },
+  "reportErrorUnknown": "Something went wrong. Please try again.",
+  "@reportErrorUnknown": {
+    "description": "Unknown report error"
+  },
+  "reportRefreshAction": "Refresh",
+  "@reportRefreshAction": {
+    "description": "Report refresh action"
+  },
+  "exportTitle": "Export Data",
+  "@exportTitle": {
+    "description": "Export screen title"
+  },
+  "exportDescription": "Export your financial data as PDF or CSV files. Files are saved locally and can be shared.",
+  "@exportDescription": {
+    "description": "Export screen description"
+  },
+  "exportDataTypeTransactions": "Transactions",
+  "@exportDataTypeTransactions": {
+    "description": "Export data type label"
+  },
+  "exportDataTypeBudgets": "Budgets",
+  "@exportDataTypeBudgets": {
+    "description": "Export data type label"
+  },
+  "exportDataTypeGoals": "Goals",
+  "@exportDataTypeGoals": {
+    "description": "Export data type label"
+  },
+  "exportDataTypeReports": "Reports",
+  "@exportDataTypeReports": {
+    "description": "Export data type label"
+  },
+  "exportDataTypeTransactionsDescription": "Export all transactions with summary and charts.",
+  "@exportDataTypeTransactionsDescription": {
+    "description": "Export data type description"
+  },
+  "exportDataTypeBudgetsDescription": "Export budgets with usage and status.",
+  "@exportDataTypeBudgetsDescription": {
+    "description": "Export data type description"
+  },
+  "exportDataTypeGoalsDescription": "Export savings goals with progress.",
+  "@exportDataTypeGoalsDescription": {
+    "description": "Export data type description"
+  },
+  "exportDataTypeReportsDescription": "Export all financial reports.",
+  "@exportDataTypeReportsDescription": {
+    "description": "Export data type description"
+  },
+  "exportFormatPdf": "Export PDF",
+  "@exportFormatPdf": {
+    "description": "PDF export format label"
+  },
+  "exportFormatCsv": "Export CSV",
+  "@exportFormatCsv": {
+    "description": "CSV export format label"
+  },
+  "exportUseDateFilterLabel": "Filter by date range",
+  "@exportUseDateFilterLabel": {
+    "description": "Toggle date filter for export"
+  },
+  "exportSummaryTitle": "Summary",
+  "@exportSummaryTitle": {
+    "description": "Export summary section title"
+  },
+  "exportGeneratedAtLabel": "Generated at",
+  "@exportGeneratedAtLabel": {
+    "description": "Export generated timestamp label"
+  },
+  "exportDateRangeLabel": "Date range",
+  "@exportDateRangeLabel": {
+    "description": "Export date range label"
+  },
+  "exportAllDatesLabel": "All dates",
+  "@exportAllDatesLabel": {
+    "description": "Export all dates label"
+  },
+  "exportIncomeLabel": "Income",
+  "@exportIncomeLabel": {
+    "description": "Export income label"
+  },
+  "exportExpenseLabel": "Expense",
+  "@exportExpenseLabel": {
+    "description": "Export expense label"
+  },
+  "exportNetBalanceLabel": "Net balance",
+  "@exportNetBalanceLabel": {
+    "description": "Export net balance label"
+  },
+  "exportTransactionCountLabel": "Transactions",
+  "@exportTransactionCountLabel": {
+    "description": "Export transaction count label"
+  },
+  "exportIdLabel": "ID",
+  "@exportIdLabel": {
+    "description": "Export column label"
+  },
+  "exportTypeLabel": "Type",
+  "@exportTypeLabel": {
+    "description": "Export column label"
+  },
+  "exportAmountLabel": "Amount",
+  "@exportAmountLabel": {
+    "description": "Export column label"
+  },
+  "exportDateLabel": "Date",
+  "@exportDateLabel": {
+    "description": "Export column label"
+  },
+  "exportNoteLabel": "Note",
+  "@exportNoteLabel": {
+    "description": "Export column label"
+  },
+  "exportCategoryLabel": "Category",
+  "@exportCategoryLabel": {
+    "description": "Export column label"
+  },
+  "exportNameLabel": "Name",
+  "@exportNameLabel": {
+    "description": "Export column label"
+  },
+  "exportTargetLabel": "Target",
+  "@exportTargetLabel": {
+    "description": "Export column label"
+  },
+  "exportCurrentLabel": "Current",
+  "@exportCurrentLabel": {
+    "description": "Export column label"
+  },
+  "exportDeadlineLabel": "Deadline",
+  "@exportDeadlineLabel": {
+    "description": "Export column label"
+  },
+  "exportStatusLabel": "Status",
+  "@exportStatusLabel": {
+    "description": "Export column label"
+  },
+  "exportSpentLabel": "Spent",
+  "@exportSpentLabel": {
+    "description": "Export column label"
+  },
+  "exportRemainingLabel": "Remaining",
+  "@exportRemainingLabel": {
+    "description": "Export column label"
+  },
+  "exportUsageLabel": "Usage",
+  "@exportUsageLabel": {
+    "description": "Export column label"
+  },
+  "exportCompletionLabel": "Completion",
+  "@exportCompletionLabel": {
+    "description": "Export column label"
+  },
+  "exportSuccessMessage": "Saved {fileName}",
+  "@exportSuccessMessage": {
+    "description": "Export success message",
+    "placeholders": {
+      "fileName": {
+        "type": "String"
+      }
+    }
+  },
+  "exportShareTitle": "Share export?",
+  "@exportShareTitle": {
+    "description": "Export share dialog title"
+  },
+  "exportShareMessage": "Your file was saved locally. Would you like to share it now?",
+  "@exportShareMessage": {
+    "description": "Export share dialog message"
+  },
+  "exportShareAction": "Share",
+  "@exportShareAction": {
+    "description": "Export share action"
+  },
+  "exportShareDismissAction": "Not now",
+  "@exportShareDismissAction": {
+    "description": "Export share dismiss action"
+  },
+  "exportErrorUnknown": "Something went wrong. Please try again.",
+  "@exportErrorUnknown": {
+    "description": "Unknown export error"
+  },
+  "exportErrorNoData": "No data available to export.",
+  "@exportErrorNoData": {
+    "description": "Export no data error"
+  },
+  "exportErrorFileWrite": "Failed to save the export file.",
+  "@exportErrorFileWrite": {
+    "description": "Export file write error"
+  },
+  "settingsTitle": "Settings",
+  "@settingsTitle": {
+    "description": "Settings screen title"
+  },
+  "settingsAppearanceTitle": "Appearance",
+  "@settingsAppearanceTitle": {
+    "description": "Settings appearance section title"
+  },
+  "settingsThemeLight": "Light",
+  "@settingsThemeLight": {
+    "description": "Light theme option"
+  },
+  "settingsThemeDark": "Dark",
+  "@settingsThemeDark": {
+    "description": "Dark theme option"
+  },
+  "settingsThemeSystem": "System default",
+  "@settingsThemeSystem": {
+    "description": "System theme option"
+  },
+  "settingsCurrencyLabel": "Currency",
+  "@settingsCurrencyLabel": {
+    "description": "Currency selection label"
+  },
+  "settingsCurrencyUsd": "US Dollar",
+  "@settingsCurrencyUsd": {
+    "description": "US Dollar currency label"
+  },
+  "settingsCurrencyEur": "Euro",
+  "@settingsCurrencyEur": {
+    "description": "Euro currency label"
+  },
+  "settingsCurrencyGbp": "British Pound",
+  "@settingsCurrencyGbp": {
+    "description": "British Pound currency label"
+  },
+  "settingsCurrencyInr": "Indian Rupee",
+  "@settingsCurrencyInr": {
+    "description": "Indian Rupee currency label"
+  },
+  "settingsCurrencyJpy": "Japanese Yen",
+  "@settingsCurrencyJpy": {
+    "description": "Japanese Yen currency label"
+  },
+  "settingsCurrencyCad": "Canadian Dollar",
+  "@settingsCurrencyCad": {
+    "description": "Canadian Dollar currency label"
+  },
+  "settingsCurrencyAud": "Australian Dollar",
+  "@settingsCurrencyAud": {
+    "description": "Australian Dollar currency label"
+  },
+  "settingsLanguageLabel": "Language",
+  "@settingsLanguageLabel": {
+    "description": "Language selection label"
+  },
+  "settingsNotificationsTitle": "Notifications",
+  "@settingsNotificationsTitle": {
+    "description": "Notification preferences section title"
+  },
+  "settingsNotificationsSubtitle": "Choose which reminders you want to receive",
+  "@settingsNotificationsSubtitle": {
+    "description": "Notification preferences section subtitle"
+  },
+  "settingsNotificationBudgetWarning": "Budget approaching limit",
+  "@settingsNotificationBudgetWarning": {
+    "description": "Budget warning notification preference"
+  },
+  "settingsNotificationBudgetExceeded": "Budget exceeded",
+  "@settingsNotificationBudgetExceeded": {
+    "description": "Budget exceeded notification preference"
+  },
+  "settingsNotificationGoalReminder": "Goal contribution reminder",
+  "@settingsNotificationGoalReminder": {
+    "description": "Goal reminder notification preference"
+  },
+  "settingsNotificationGoalDeadline": "Goal deadline reminder",
+  "@settingsNotificationGoalDeadline": {
+    "description": "Goal deadline notification preference"
+  },
+  "settingsNotificationRecurringReminder": "Recurring transaction reminder",
+  "@settingsNotificationRecurringReminder": {
+    "description": "Recurring transaction notification preference"
+  },
+  "settingsNotificationMonthlySummary": "Monthly summary reminder",
+  "@settingsNotificationMonthlySummary": {
+    "description": "Monthly summary notification preference"
+  },
+  "settingsExportPreferencesTitle": "Export defaults",
+  "@settingsExportPreferencesTitle": {
+    "description": "Export preferences section title"
+  },
+  "settingsExportPreferencesSubtitle": "Default options used on the export screen",
+  "@settingsExportPreferencesSubtitle": {
+    "description": "Export preferences section subtitle"
+  },
+  "settingsExportUseDateFilter": "Use date range filter by default",
+  "@settingsExportUseDateFilter": {
+    "description": "Export date filter default toggle"
+  },
+  "settingsAccountTitle": "Account",
+  "@settingsAccountTitle": {
+    "description": "Account section title in settings"
+  },
+  "settingsDeleteAccountButton": "Delete account",
+  "@settingsDeleteAccountButton": {
+    "description": "Delete account button label"
+  },
+  "settingsDeleteAccountConfirmTitle": "Delete account?",
+  "@settingsDeleteAccountConfirmTitle": {
+    "description": "Delete account confirmation title"
+  },
+  "settingsDeleteAccountConfirmMessage": "This will permanently delete your account and all financial data on this device. This action cannot be undone.",
+  "@settingsDeleteAccountConfirmMessage": {
+    "description": "Delete account confirmation message"
+  },
+  "settingsErrorUnknown": "Something went wrong. Please try again.",
+  "@settingsErrorUnknown": {
+    "description": "Unknown settings error"
+  },
+  "settingsErrorDeleteAccountFailed": "Failed to delete account. Please try again.",
+  "@settingsErrorDeleteAccountFailed": {
+    "description": "Delete account failure error"
+  },
+  "authTitle": "Authentication",
+  "@authTitle": {
+    "description": "Authentication screen title"
+  },
+  "languageEnglish": "English",
+  "@languageEnglish": {
+    "description": "Display name for the English language"
+  },
+  "widgetActionConfirm": "Confirm",
+  "@widgetActionConfirm": {
+    "description": "Default confirm button label for dialogs"
+  },
+  "widgetActionCancel": "Cancel",
+  "@widgetActionCancel": {
+    "description": "Default cancel button label for dialogs"
+  },
+  "widgetActionClose": "Close",
+  "@widgetActionClose": {
+    "description": "Default close button label"
+  },
+  "widgetActionRetry": "Retry",
+  "@widgetActionRetry": {
+    "description": "Default retry button label for error states"
+  },
+  "widgetSearchPlaceholder": "Search",
+  "@widgetSearchPlaceholder": {
+    "description": "Default placeholder for search fields"
+  },
+  "widgetLoading": "Loading",
+  "@widgetLoading": {
+    "description": "Accessibility label for loading indicators"
+  },
+  "widgetErrorTitle": "Something went wrong",
+  "@widgetErrorTitle": {
+    "description": "Default title for error states"
+  },
+  "widgetErrorMessage": "An unexpected error occurred. Please try again.",
+  "@widgetErrorMessage": {
+    "description": "Default message for error states"
+  },
+  "widgetEmptyTitle": "Nothing here yet",
+  "@widgetEmptyTitle": {
+    "description": "Default title for empty states"
+  },
+  "widgetEmptyMessage": "There is no content to display.",
+  "@widgetEmptyMessage": {
+    "description": "Default message for empty states"
+  },
+  "widgetPreviousPage": "Previous page",
+  "@widgetPreviousPage": {
+    "description": "Accessibility label for previous page button"
+  },
+  "widgetNextPage": "Next page",
+  "@widgetNextPage": {
+    "description": "Accessibility label for next page button"
+  },
+  "widgetPageIndicator": "Page {current} of {total}",
+  "@widgetPageIndicator": {
+    "description": "Page indicator for pagination",
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "widgetImageLoadError": "Failed to load image",
+  "@widgetImageLoadError": {
+    "description": "Error message when an image fails to load"
+  },
+  "widgetConfirmationTitle": "Confirm action",
+  "@widgetConfirmationTitle": {
+    "description": "Default title for confirmation dialogs"
+  },
+  "widgetConfirmationMessage": "Are you sure you want to continue?",
+  "@widgetConfirmationMessage": {
+    "description": "Default message for confirmation dialogs"
+  },
+  "widgetDismiss": "Dismiss",
+  "@widgetDismiss": {
+    "description": "Accessibility label for dismissing a snackbar"
+  },
+  "authLoginTitle": "Welcome back",
+  "@authLoginTitle": {
+    "description": "Login screen title"
+  },
+  "authLoginSubtitle": "Sign in to manage your personal finances",
+  "@authLoginSubtitle": {
+    "description": "Login screen subtitle"
+  },
+  "authRegisterTitle": "Create account",
+  "@authRegisterTitle": {
+    "description": "Register screen title"
+  },
+  "authRegisterSubtitle": "Set up your offline finance profile",
+  "@authRegisterSubtitle": {
+    "description": "Register screen subtitle"
+  },
+  "authForgotPasswordTitle": "Reset password",
+  "@authForgotPasswordTitle": {
+    "description": "Forgot password screen title"
+  },
+  "authForgotPasswordSubtitle": "Enter your email and choose a new password",
+  "@authForgotPasswordSubtitle": {
+    "description": "Forgot password screen subtitle"
+  },
+  "authEmailLabel": "Email",
+  "@authEmailLabel": {
+    "description": "Email field label"
+  },
+  "authPasswordLabel": "Password",
+  "@authPasswordLabel": {
+    "description": "Password field label"
+  },
+  "authNewPasswordLabel": "New password",
+  "@authNewPasswordLabel": {
+    "description": "New password field label"
+  },
+  "authConfirmPasswordLabel": "Confirm password",
+  "@authConfirmPasswordLabel": {
+    "description": "Confirm password field label"
+  },
+  "authDisplayNameLabel": "Display name",
+  "@authDisplayNameLabel": {
+    "description": "Display name field label"
+  },
+  "authLoginButton": "Sign in",
+  "@authLoginButton": {
+    "description": "Login button label"
+  },
+  "authRegisterButton": "Create account",
+  "@authRegisterButton": {
+    "description": "Register button label"
+  },
+  "authResetPasswordButton": "Reset password",
+  "@authResetPasswordButton": {
+    "description": "Reset password button label"
+  },
+  "authForgotPasswordLink": "Forgot password?",
+  "@authForgotPasswordLink": {
+    "description": "Link to forgot password screen"
+  },
+  "authRegisterLink": "Register",
+  "@authRegisterLink": {
+    "description": "Link to register screen"
+  },
+  "authLoginLink": "Sign in",
+  "@authLoginLink": {
+    "description": "Link to login screen"
+  },
+  "authBackToLoginLink": "Back to sign in",
+  "@authBackToLoginLink": {
+    "description": "Link back to login screen"
+  },
+  "authNoAccountPrompt": "Don't have an account?",
+  "@authNoAccountPrompt": {
+    "description": "Prompt before register link on login screen"
+  },
+  "authHaveAccountPrompt": "Already have an account?",
+  "@authHaveAccountPrompt": {
+    "description": "Prompt before login link on register screen"
+  },
+  "authPasswordResetSuccess": "Password updated successfully. Please sign in.",
+  "@authPasswordResetSuccess": {
+    "description": "Snackbar message after password reset"
+  },
+  "authSignOutButton": "Sign out",
+  "@authSignOutButton": {
+    "description": "Sign out button label"
+  },
+  "authErrorInvalidEmail": "Please enter a valid email address.",
+  "@authErrorInvalidEmail": {
+    "description": "Invalid email validation error"
+  },
+  "authErrorWeakPassword": "Password must be at least 8 characters.",
+  "@authErrorWeakPassword": {
+    "description": "Weak password validation error"
+  },
+  "authErrorDisplayNameRequired": "Display name is required.",
+  "@authErrorDisplayNameRequired": {
+    "description": "Display name required validation error"
+  },
+  "authErrorEmailAlreadyExists": "An account with this email already exists.",
+  "@authErrorEmailAlreadyExists": {
+    "description": "Email already registered error"
+  },
+  "authErrorUserNotFound": "No account found with this email.",
+  "@authErrorUserNotFound": {
+    "description": "User not found error"
+  },
+  "authErrorInvalidCredentials": "Invalid email or password.",
+  "@authErrorInvalidCredentials": {
+    "description": "Invalid login credentials error"
+  },
+  "authErrorPasswordsDoNotMatch": "Passwords do not match.",
+  "@authErrorPasswordsDoNotMatch": {
+    "description": "Password confirmation mismatch error"
+  },
+  "authSecurityAnswerLabel": "Security answer",
+  "@authSecurityAnswerLabel": {
+    "description": "Security answer field label for account recovery"
+  },
+  "authSecurityAnswerHint": "Used to recover your account offline",
+  "@authSecurityAnswerHint": {
+    "description": "Helper text for security answer field"
+  },
+  "authErrorSecurityAnswerRequired": "Security answer is required.",
+  "@authErrorSecurityAnswerRequired": {
+    "description": "Security answer required validation error"
+  },
+  "authErrorInvalidSecurityAnswer": "Security answer is incorrect.",
+  "@authErrorInvalidSecurityAnswer": {
+    "description": "Invalid security answer error"
+  },
+  "authErrorUnknown": "Something went wrong. Please try again.",
+  "@authErrorUnknown": {
+    "description": "Unknown authentication error"
+  },
+  "categoryListTitle": "Categories",
+  "@categoryListTitle": {
+    "description": "Category list screen title"
+  },
+  "categoryCreateTitle": "Create category",
+  "@categoryCreateTitle": {
+    "description": "Create category screen title"
+  },
+  "categoryEditTitle": "Edit category",
+  "@categoryEditTitle": {
+    "description": "Edit category screen title"
+  },
+  "categoryDashboardSubtitle": "Manage income and expense categories",
+  "@categoryDashboardSubtitle": {
+    "description": "Dashboard card subtitle for categories"
+  },
+  "categorySearchPlaceholder": "Search categories",
+  "@categorySearchPlaceholder": {
+    "description": "Category search field placeholder"
+  },
+  "categoryFilterAll": "All",
+  "@categoryFilterAll": {
+    "description": "Show all category types filter"
+  },
+  "categoryTypeIncome": "Income",
+  "@categoryTypeIncome": {
+    "description": "Income category type label"
+  },
+  "categoryTypeExpense": "Expense",
+  "@categoryTypeExpense": {
+    "description": "Expense category type label"
+  },
+  "categoryNameLabel": "Category name",
+  "@categoryNameLabel": {
+    "description": "Category name field label"
+  },
+  "categoryIconLabel": "Icon",
+  "@categoryIconLabel": {
+    "description": "Category icon picker label"
+  },
+  "categoryColorLabel": "Color",
+  "@categoryColorLabel": {
+    "description": "Category color picker label"
+  },
+  "categoryAddAction": "Add category",
+  "@categoryAddAction": {
+    "description": "Add category action label"
+  },
+  "categoryCreateAction": "Create category",
+  "@categoryCreateAction": {
+    "description": "Create category submit button"
+  },
+  "categorySaveAction": "Save changes",
+  "@categorySaveAction": {
+    "description": "Save category changes button"
+  },
+  "categoryCreateIncomeAction": "Create income category",
+  "@categoryCreateIncomeAction": {
+    "description": "Create income category action"
+  },
+  "categoryCreateExpenseAction": "Create expense category",
+  "@categoryCreateExpenseAction": {
+    "description": "Create expense category action"
+  },
+  "categoryDeleteAction": "Delete",
+  "@categoryDeleteAction": {
+    "description": "Delete category action"
+  },
+  "categoryDeleteConfirmTitle": "Delete category?",
+  "@categoryDeleteConfirmTitle": {
+    "description": "Delete category confirmation title"
+  },
+  "categoryDeleteConfirmMessage": "Are you sure you want to delete \"{name}\"?",
+  "@categoryDeleteConfirmMessage": {
+    "description": "Delete category confirmation message",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "categoryEmptyTitle": "No categories yet",
+  "@categoryEmptyTitle": {
+    "description": "Empty category list title"
+  },
+  "categoryEmptyMessage": "Create income and expense categories to organize your transactions.",
+  "@categoryEmptyMessage": {
+    "description": "Empty category list message"
+  },
+  "categoryCreateSuccess": "Category created successfully.",
+  "@categoryCreateSuccess": {
+    "description": "Category created success message"
+  },
+  "categoryUpdateSuccess": "Category updated successfully.",
+  "@categoryUpdateSuccess": {
+    "description": "Category updated success message"
+  },
+  "categoryErrorNameRequired": "Category name is required.",
+  "@categoryErrorNameRequired": {
+    "description": "Category name required error"
+  },
+  "categoryErrorNameTooShort": "Category name must be at least 2 characters.",
+  "@categoryErrorNameTooShort": {
+    "description": "Category name too short error"
+  },
+  "categoryErrorNotFound": "Category not found.",
+  "@categoryErrorNotFound": {
+    "description": "Category not found error"
+  },
+  "categoryErrorDuplicateName": "A category with this name already exists.",
+  "@categoryErrorDuplicateName": {
+    "description": "Duplicate category name error"
+  },
+  "categoryErrorHasTransactions": "Cannot delete a category that has transactions.",
+  "@categoryErrorHasTransactions": {
+    "description": "Category has transactions error"
+  },
+  "categoryErrorUnknown": "Something went wrong. Please try again.",
+  "@categoryErrorUnknown": {
+    "description": "Unknown category error"
+  },
+  "transactionListTitle": "Transactions",
+  "@transactionListTitle": {
+    "description": "Transaction list screen title"
+  },
+  "transactionCreateTitle": "Add transaction",
+  "@transactionCreateTitle": {
+    "description": "Create transaction screen title"
+  },
+  "transactionEditTitle": "Edit transaction",
+  "@transactionEditTitle": {
+    "description": "Edit transaction screen title"
+  },
+  "transactionDetailTitle": "Transaction details",
+  "@transactionDetailTitle": {
+    "description": "Transaction detail screen title"
+  },
+  "transactionDashboardSubtitle": "Track income and expenses",
+  "@transactionDashboardSubtitle": {
+    "description": "Dashboard card subtitle for transactions"
+  },
+  "transactionSearchPlaceholder": "Search transactions",
+  "@transactionSearchPlaceholder": {
+    "description": "Transaction search field placeholder"
+  },
+  "transactionAmountLabel": "Amount",
+  "@transactionAmountLabel": {
+    "description": "Transaction amount field label"
+  },
+  "transactionCategoryLabel": "Category",
+  "@transactionCategoryLabel": {
+    "description": "Transaction category field label"
+  },
+  "transactionCategoryFilterLabel": "Filter by category",
+  "@transactionCategoryFilterLabel": {
+    "description": "Transaction category filter label"
+  },
+  "transactionDateLabel": "Date",
+  "@transactionDateLabel": {
+    "description": "Transaction date field label"
+  },
+  "transactionDateRangeLabel": "Select date range",
+  "@transactionDateRangeLabel": {
+    "description": "Transaction date range filter label"
+  },
+  "transactionTypeLabel": "Type",
+  "@transactionTypeLabel": {
+    "description": "Transaction type label"
+  },
+  "transactionNoteLabel": "Note",
+  "@transactionNoteLabel": {
+    "description": "Transaction note field label"
+  },
+  "transactionAddAction": "Add transaction",
+  "@transactionAddAction": {
+    "description": "Add transaction action label"
+  },
+  "transactionCreateAction": "Create transaction",
+  "@transactionCreateAction": {
+    "description": "Create transaction submit button"
+  },
+  "transactionSaveAction": "Save changes",
+  "@transactionSaveAction": {
+    "description": "Save transaction changes button"
+  },
+  "transactionCreateIncomeAction": "Add income",
+  "@transactionCreateIncomeAction": {
+    "description": "Add income transaction action"
+  },
+  "transactionCreateExpenseAction": "Add expense",
+  "@transactionCreateExpenseAction": {
+    "description": "Add expense transaction action"
+  },
+  "transactionDeleteAction": "Delete",
+  "@transactionDeleteAction": {
+    "description": "Delete transaction action"
+  },
+  "transactionClearDateRangeAction": "Clear date range",
+  "@transactionClearDateRangeAction": {
+    "description": "Clear date range filter action"
+  },
+  "transactionDeleteConfirmTitle": "Delete transaction?",
+  "@transactionDeleteConfirmTitle": {
+    "description": "Delete transaction confirmation title"
+  },
+  "transactionDeleteConfirmMessage": "Are you sure you want to delete this {amount} transaction?",
+  "@transactionDeleteConfirmMessage": {
+    "description": "Delete transaction confirmation message",
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "transactionEmptyTitle": "No transactions yet",
+  "@transactionEmptyTitle": {
+    "description": "Empty transaction list title"
+  },
+  "transactionEmptyMessage": "Add income and expense transactions to start tracking your finances.",
+  "@transactionEmptyMessage": {
+    "description": "Empty transaction list message"
+  },
+  "transactionNoCategoriesMessage": "Create a matching category before adding a transaction.",
+  "@transactionNoCategoriesMessage": {
+    "description": "Message when no categories exist for transaction type"
+  },
+  "transactionCreateSuccess": "Transaction created successfully.",
+  "@transactionCreateSuccess": {
+    "description": "Transaction created success message"
+  },
+  "transactionUpdateSuccess": "Transaction updated successfully.",
+  "@transactionUpdateSuccess": {
+    "description": "Transaction updated success message"
+  },
+  "transactionDeleteSuccess": "Transaction deleted successfully.",
+  "@transactionDeleteSuccess": {
+    "description": "Transaction deleted success message"
+  },
+  "transactionDailySummaryTitle": "Today's summary",
+  "@transactionDailySummaryTitle": {
+    "description": "Daily transaction summary title"
+  },
+  "transactionMonthlySummaryTitle": "This month's summary",
+  "@transactionMonthlySummaryTitle": {
+    "description": "Monthly transaction summary title"
+  },
+  "transactionSummaryIncome": "Income",
+  "@transactionSummaryIncome": {
+    "description": "Income label in transaction summary"
+  },
+  "transactionSummaryExpense": "Expense",
+  "@transactionSummaryExpense": {
+    "description": "Expense label in transaction summary"
+  },
+  "transactionSummaryNet": "Net",
+  "@transactionSummaryNet": {
+    "description": "Net label in transaction summary"
+  },
+  "transactionErrorAmountRequired": "Amount is required.",
+  "@transactionErrorAmountRequired": {
+    "description": "Transaction amount required error"
+  },
+  "transactionErrorAmountInvalid": "Amount must be greater than zero.",
+  "@transactionErrorAmountInvalid": {
+    "description": "Transaction amount invalid error"
+  },
+  "transactionErrorCategoryRequired": "Category is required.",
+  "@transactionErrorCategoryRequired": {
+    "description": "Transaction category required error"
+  },
+  "transactionErrorCategoryNotFound": "Category not found.",
+  "@transactionErrorCategoryNotFound": {
+    "description": "Transaction category not found error"
+  },
+  "transactionErrorCategoryTypeMismatch": "Selected category does not match the transaction type.",
+  "@transactionErrorCategoryTypeMismatch": {
+    "description": "Transaction category type mismatch error"
+  },
+  "transactionErrorNotFound": "Transaction not found.",
+  "@transactionErrorNotFound": {
+    "description": "Transaction not found error"
+  },
+  "transactionErrorNoteTooLong": "Note must be 500 characters or fewer.",
+  "@transactionErrorNoteTooLong": {
+    "description": "Transaction note too long error"
+  },
+  "transactionErrorUnknown": "Something went wrong. Please try again.",
+  "@transactionErrorUnknown": {
+    "description": "Unknown transaction error"
+  },
+  "budgetListTitle": "Budgets",
+  "@budgetListTitle": {
+    "description": "Budget list screen title"
+  },
+  "budgetCreateTitle": "Create budget",
+  "@budgetCreateTitle": {
+    "description": "Create budget screen title"
+  },
+  "budgetEditTitle": "Edit budget",
+  "@budgetEditTitle": {
+    "description": "Edit budget screen title"
+  },
+  "budgetDetailTitle": "Budget details",
+  "@budgetDetailTitle": {
+    "description": "Budget detail screen title"
+  },
+  "budgetDashboardSubtitle": "Plan and track spending limits",
+  "@budgetDashboardSubtitle": {
+    "description": "Dashboard card subtitle for budgets"
+  },
+  "budgetSearchPlaceholder": "Search budgets",
+  "@budgetSearchPlaceholder": {
+    "description": "Budget search field placeholder"
+  },
+  "budgetNameLabel": "Budget name",
+  "@budgetNameLabel": {
+    "description": "Budget name field label"
+  },
+  "budgetAmountLabel": "Budget amount",
+  "@budgetAmountLabel": {
+    "description": "Budget amount field label"
+  },
+  "budgetCategoryLabel": "Category",
+  "@budgetCategoryLabel": {
+    "description": "Budget category field label"
+  },
+  "budgetStartDateLabel": "Start date",
+  "@budgetStartDateLabel": {
+    "description": "Budget start date label"
+  },
+  "budgetEndDateLabel": "End date",
+  "@budgetEndDateLabel": {
+    "description": "Budget end date label"
+  },
+  "budgetPeriodLabel": "Period",
+  "@budgetPeriodLabel": {
+    "description": "Budget period label"
+  },
+  "budgetLimitLabel": "Limit",
+  "@budgetLimitLabel": {
+    "description": "Budget limit label"
+  },
+  "budgetSpentLabel": "Spent",
+  "@budgetSpentLabel": {
+    "description": "Budget spent label"
+  },
+  "budgetRemainingLabel": "Remaining",
+  "@budgetRemainingLabel": {
+    "description": "Budget remaining label"
+  },
+  "budgetTypeOverall": "Overall",
+  "@budgetTypeOverall": {
+    "description": "Overall budget type label"
+  },
+  "budgetTypeCategory": "Category",
+  "@budgetTypeCategory": {
+    "description": "Category budget type label"
+  },
+  "budgetStatusNormal": "On track",
+  "@budgetStatusNormal": {
+    "description": "Budget normal status label"
+  },
+  "budgetStatusWarning": "Approaching limit",
+  "@budgetStatusWarning": {
+    "description": "Budget warning status label at 80 percent"
+  },
+  "budgetStatusExceeded": "Exceeded",
+  "@budgetStatusExceeded": {
+    "description": "Budget exceeded status label at 100 percent"
+  },
+  "budgetAddAction": "Add budget",
+  "@budgetAddAction": {
+    "description": "Add budget action label"
+  },
+  "budgetCreateAction": "Create budget",
+  "@budgetCreateAction": {
+    "description": "Create budget submit button"
+  },
+  "budgetSaveAction": "Save changes",
+  "@budgetSaveAction": {
+    "description": "Save budget changes button"
+  },
+  "budgetCreateOverallAction": "Create overall budget",
+  "@budgetCreateOverallAction": {
+    "description": "Create overall budget action"
+  },
+  "budgetCreateCategoryAction": "Create category budget",
+  "@budgetCreateCategoryAction": {
+    "description": "Create category budget action"
+  },
+  "budgetDeleteAction": "Delete",
+  "@budgetDeleteAction": {
+    "description": "Delete budget action"
+  },
+  "budgetDeleteConfirmTitle": "Delete budget?",
+  "@budgetDeleteConfirmTitle": {
+    "description": "Delete budget confirmation title"
+  },
+  "budgetDeleteConfirmMessage": "Are you sure you want to delete \"{name}\"?",
+  "@budgetDeleteConfirmMessage": {
+    "description": "Delete budget confirmation message",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "budgetEmptyTitle": "No budgets yet",
+  "@budgetEmptyTitle": {
+    "description": "Empty budget list title"
+  },
+  "budgetEmptyMessage": "Create overall or category budgets to plan your spending.",
+  "@budgetEmptyMessage": {
+    "description": "Empty budget list message"
+  },
+  "budgetNoCategoriesMessage": "Create an expense category before adding a category budget.",
+  "@budgetNoCategoriesMessage": {
+    "description": "Message when no expense categories exist"
+  },
+  "budgetCreateSuccess": "Budget created successfully.",
+  "@budgetCreateSuccess": {
+    "description": "Budget created success message"
+  },
+  "budgetUpdateSuccess": "Budget updated successfully.",
+  "@budgetUpdateSuccess": {
+    "description": "Budget updated success message"
+  },
+  "budgetDeleteSuccess": "Budget deleted successfully.",
+  "@budgetDeleteSuccess": {
+    "description": "Budget deleted success message"
+  },
+  "budgetErrorNameRequired": "Budget name is required.",
+  "@budgetErrorNameRequired": {
+    "description": "Budget name required error"
+  },
+  "budgetErrorNameTooShort": "Budget name must be at least 2 characters.",
+  "@budgetErrorNameTooShort": {
+    "description": "Budget name too short error"
+  },
+  "budgetErrorAmountInvalid": "Budget amount must be greater than zero.",
+  "@budgetErrorAmountInvalid": {
+    "description": "Budget amount invalid error"
+  },
+  "budgetErrorDateRangeInvalid": "End date must be on or after the start date.",
+  "@budgetErrorDateRangeInvalid": {
+    "description": "Budget date range invalid error"
+  },
+  "budgetErrorCategoryRequired": "Category is required for a category budget.",
+  "@budgetErrorCategoryRequired": {
+    "description": "Budget category required error"
+  },
+  "budgetErrorCategoryNotFound": "Category not found.",
+  "@budgetErrorCategoryNotFound": {
+    "description": "Budget category not found error"
+  },
+  "budgetErrorCategoryTypeMismatch": "Only expense categories can be used for budgets.",
+  "@budgetErrorCategoryTypeMismatch": {
+    "description": "Budget category type mismatch error"
+  },
+  "budgetErrorNotFound": "Budget not found.",
+  "@budgetErrorNotFound": {
+    "description": "Budget not found error"
+  },
+  "budgetErrorDuplicateName": "A budget with this name already exists.",
+  "@budgetErrorDuplicateName": {
+    "description": "Duplicate budget name error"
+  },
+  "budgetErrorUnknown": "Something went wrong. Please try again.",
+  "@budgetErrorUnknown": {
+    "description": "Unknown budget error"
+  },
+  "goalListTitle": "Savings Goals",
+  "@goalListTitle": {
+    "description": "Goal list screen title"
+  },
+  "goalCreateTitle": "Create goal",
+  "@goalCreateTitle": {
+    "description": "Create goal screen title"
+  },
+  "goalEditTitle": "Edit goal",
+  "@goalEditTitle": {
+    "description": "Edit goal screen title"
+  },
+  "goalDetailTitle": "Goal details",
+  "@goalDetailTitle": {
+    "description": "Goal detail screen title"
+  },
+  "goalDashboardSubtitle": "Track savings goals and contributions",
+  "@goalDashboardSubtitle": {
+    "description": "Dashboard card subtitle for goals"
+  },
+  "goalSearchPlaceholder": "Search goals",
+  "@goalSearchPlaceholder": {
+    "description": "Goal search field placeholder"
+  },
+  "goalFilterAll": "All",
+  "@goalFilterAll": {
+    "description": "Show all goal statuses filter"
+  },
+  "goalNameLabel": "Goal name",
+  "@goalNameLabel": {
+    "description": "Goal name field label"
+  },
+  "goalTargetAmountLabel": "Target amount",
+  "@goalTargetAmountLabel": {
+    "description": "Goal target amount field label"
+  },
+  "goalDeadlineLabel": "Deadline",
+  "@goalDeadlineLabel": {
+    "description": "Goal deadline label"
+  },
+  "goalTargetLabel": "Target",
+  "@goalTargetLabel": {
+    "description": "Goal target label"
+  },
+  "goalSavedLabel": "Saved",
+  "@goalSavedLabel": {
+    "description": "Goal saved amount label"
+  },
+  "goalRemainingLabel": "Remaining",
+  "@goalRemainingLabel": {
+    "description": "Goal remaining amount label"
+  },
+  "goalStatusActive": "Active",
+  "@goalStatusActive": {
+    "description": "Active goal status label"
+  },
+  "goalStatusCompleted": "Completed",
+  "@goalStatusCompleted": {
+    "description": "Completed goal status label"
+  },
+  "goalStatusExpired": "Expired",
+  "@goalStatusExpired": {
+    "description": "Expired goal status label"
+  },
+  "goalAddAction": "Add goal",
+  "@goalAddAction": {
+    "description": "Add goal action label"
+  },
+  "goalCreateAction": "Create goal",
+  "@goalCreateAction": {
+    "description": "Create goal submit button"
+  },
+  "goalSaveAction": "Save changes",
+  "@goalSaveAction": {
+    "description": "Save goal changes button"
+  },
+  "goalDeleteAction": "Delete",
+  "@goalDeleteAction": {
+    "description": "Delete goal action"
+  },
+  "goalAddContributionAction": "Add contribution",
+  "@goalAddContributionAction": {
+    "description": "Add contribution action"
+  },
+  "goalContributionAmountLabel": "Contribution amount",
+  "@goalContributionAmountLabel": {
+    "description": "Contribution amount field label"
+  },
+  "goalContributionsTitle": "Contributions",
+  "@goalContributionsTitle": {
+    "description": "Contributions section title"
+  },
+  "goalDeleteConfirmTitle": "Delete goal?",
+  "@goalDeleteConfirmTitle": {
+    "description": "Delete goal confirmation title"
+  },
+  "goalDeleteConfirmMessage": "Are you sure you want to delete \"{name}\"?",
+  "@goalDeleteConfirmMessage": {
+    "description": "Delete goal confirmation message",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "goalEmptyTitle": "No savings goals yet",
+  "@goalEmptyTitle": {
+    "description": "Empty goal list title"
+  },
+  "goalEmptyMessage": "Create a savings goal and add contributions to track your progress.",
+  "@goalEmptyMessage": {
+    "description": "Empty goal list message"
+  },
+  "goalCreateSuccess": "Goal created successfully.",
+  "@goalCreateSuccess": {
+    "description": "Goal created success message"
+  },
+  "goalUpdateSuccess": "Goal updated successfully.",
+  "@goalUpdateSuccess": {
+    "description": "Goal updated success message"
+  },
+  "goalDeleteSuccess": "Goal deleted successfully.",
+  "@goalDeleteSuccess": {
+    "description": "Goal deleted success message"
+  },
+  "goalContributionSuccess": "Contribution added successfully.",
+  "@goalContributionSuccess": {
+    "description": "Contribution added success message"
+  },
+  "goalErrorNameRequired": "Goal name is required.",
+  "@goalErrorNameRequired": {
+    "description": "Goal name required error"
+  },
+  "goalErrorNameTooShort": "Goal name must be at least 2 characters.",
+  "@goalErrorNameTooShort": {
+    "description": "Goal name too short error"
+  },
+  "goalErrorTargetAmountInvalid": "Target amount must be greater than zero.",
+  "@goalErrorTargetAmountInvalid": {
+    "description": "Goal target amount invalid error"
+  },
+  "goalErrorDeadlineInvalid": "Deadline must be today or in the future.",
+  "@goalErrorDeadlineInvalid": {
+    "description": "Goal deadline invalid error"
+  },
+  "goalErrorContributionAmountInvalid": "Contribution amount must be greater than zero.",
+  "@goalErrorContributionAmountInvalid": {
+    "description": "Contribution amount invalid error"
+  },
+  "goalErrorNotFound": "Goal not found.",
+  "@goalErrorNotFound": {
+    "description": "Goal not found error"
+  },
+  "goalErrorCompleted": "Cannot add contributions to a completed goal.",
+  "@goalErrorCompleted": {
+    "description": "Goal already completed error"
+  },
+  "goalErrorExpired": "Cannot add contributions to an expired goal.",
+  "@goalErrorExpired": {
+    "description": "Goal expired error"
+  },
+  "goalErrorDuplicateName": "A goal with this name already exists.",
+  "@goalErrorDuplicateName": {
+    "description": "Duplicate goal name error"
+  },
+  "goalErrorUnknown": "Something went wrong. Please try again.",
+  "@goalErrorUnknown": {
+    "description": "Unknown goal error"
+  },
+  "recurringListTitle": "Recurring Transactions",
+  "@recurringListTitle": {
+    "description": "Recurring transaction list screen title"
+  },
+  "recurringCreateTitle": "Create recurring transaction",
+  "@recurringCreateTitle": {
+    "description": "Create recurring transaction screen title"
+  },
+  "recurringEditTitle": "Edit recurring transaction",
+  "@recurringEditTitle": {
+    "description": "Edit recurring transaction screen title"
+  },
+  "recurringDetailTitle": "Recurring transaction details",
+  "@recurringDetailTitle": {
+    "description": "Recurring transaction detail screen title"
+  },
+  "recurringDashboardSubtitle": "Automate income and expense entries",
+  "@recurringDashboardSubtitle": {
+    "description": "Dashboard card subtitle for recurring transactions"
+  },
+  "recurringSearchPlaceholder": "Search recurring transactions",
+  "@recurringSearchPlaceholder": {
+    "description": "Recurring transaction search field placeholder"
+  },
+  "recurringFilterAll": "All",
+  "@recurringFilterAll": {
+    "description": "Show all recurring transaction statuses filter"
+  },
+  "recurringAmountLabel": "Amount",
+  "@recurringAmountLabel": {
+    "description": "Recurring transaction amount field label"
+  },
+  "recurringCategoryLabel": "Category",
+  "@recurringCategoryLabel": {
+    "description": "Recurring transaction category field label"
+  },
+  "recurringFrequencyLabel": "Frequency",
+  "@recurringFrequencyLabel": {
+    "description": "Recurring transaction frequency label"
+  },
+  "recurringNextExecutionLabel": "Next execution",
+  "@recurringNextExecutionLabel": {
+    "description": "Next execution date label"
+  },
+  "recurringNoteLabel": "Note",
+  "@recurringNoteLabel": {
+    "description": "Recurring transaction note field label"
+  },
+  "recurringFrequencyDaily": "Daily",
+  "@recurringFrequencyDaily": {
+    "description": "Daily recurrence label"
+  },
+  "recurringFrequencyWeekly": "Weekly",
+  "@recurringFrequencyWeekly": {
+    "description": "Weekly recurrence label"
+  },
+  "recurringFrequencyMonthly": "Monthly",
+  "@recurringFrequencyMonthly": {
+    "description": "Monthly recurrence label"
+  },
+  "recurringFrequencyYearly": "Yearly",
+  "@recurringFrequencyYearly": {
+    "description": "Yearly recurrence label"
+  },
+  "recurringStatusActive": "Active",
+  "@recurringStatusActive": {
+    "description": "Active recurring transaction status"
+  },
+  "recurringStatusPaused": "Paused",
+  "@recurringStatusPaused": {
+    "description": "Paused recurring transaction status"
+  },
+  "recurringAddAction": "Add recurring",
+  "@recurringAddAction": {
+    "description": "Add recurring transaction action"
+  },
+  "recurringCreateAction": "Create recurring",
+  "@recurringCreateAction": {
+    "description": "Create recurring transaction submit button"
+  },
+  "recurringSaveAction": "Save changes",
+  "@recurringSaveAction": {
+    "description": "Save recurring transaction changes button"
+  },
+  "recurringDeleteAction": "Delete",
+  "@recurringDeleteAction": {
+    "description": "Delete recurring transaction action"
+  },
+  "recurringPauseAction": "Pause",
+  "@recurringPauseAction": {
+    "description": "Pause recurring transaction action"
+  },
+  "recurringResumeAction": "Resume",
+  "@recurringResumeAction": {
+    "description": "Resume recurring transaction action"
+  },
+  "recurringDeleteConfirmTitle": "Delete recurring transaction?",
+  "@recurringDeleteConfirmTitle": {
+    "description": "Delete recurring transaction confirmation title"
+  },
+  "recurringDeleteConfirmMessage": "Are you sure you want to delete the recurring transaction for \"{name}\"?",
+  "@recurringDeleteConfirmMessage": {
+    "description": "Delete recurring transaction confirmation message",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "recurringEmptyTitle": "No recurring transactions yet",
+  "@recurringEmptyTitle": {
+    "description": "Empty recurring transaction list title"
+  },
+  "recurringEmptyMessage": "Create a recurring transaction to automate your income and expenses.",
+  "@recurringEmptyMessage": {
+    "description": "Empty recurring transaction list message"
+  },
+  "recurringNoCategoriesMessage": "Create a category before adding a recurring transaction.",
+  "@recurringNoCategoriesMessage": {
+    "description": "Message when no categories exist for recurring form"
+  },
+  "recurringCreateSuccess": "Recurring transaction created successfully.",
+  "@recurringCreateSuccess": {
+    "description": "Recurring transaction created success message"
+  },
+  "recurringUpdateSuccess": "Recurring transaction updated successfully.",
+  "@recurringUpdateSuccess": {
+    "description": "Recurring transaction updated success message"
+  },
+  "recurringDeleteSuccess": "Recurring transaction deleted successfully.",
+  "@recurringDeleteSuccess": {
+    "description": "Recurring transaction deleted success message"
+  },
+  "recurringPauseSuccess": "Recurring transaction paused successfully.",
+  "@recurringPauseSuccess": {
+    "description": "Recurring transaction paused success message"
+  },
+  "recurringResumeSuccess": "Recurring transaction resumed successfully.",
+  "@recurringResumeSuccess": {
+    "description": "Recurring transaction resumed success message"
+  },
+  "recurringErrorAmountInvalid": "Amount must be greater than zero.",
+  "@recurringErrorAmountInvalid": {
+    "description": "Recurring transaction amount invalid error"
+  },
+  "recurringErrorCategoryRequired": "Category is required.",
+  "@recurringErrorCategoryRequired": {
+    "description": "Recurring transaction category required error"
+  },
+  "recurringErrorCategoryNotFound": "Category not found.",
+  "@recurringErrorCategoryNotFound": {
+    "description": "Recurring transaction category not found error"
+  },
+  "recurringErrorCategoryTypeMismatch": "Category type does not match transaction type.",
+  "@recurringErrorCategoryTypeMismatch": {
+    "description": "Recurring transaction category type mismatch error"
+  },
+  "recurringErrorNoteTooLong": "Note must be 500 characters or fewer.",
+  "@recurringErrorNoteTooLong": {
+    "description": "Recurring transaction note too long error"
+  },
+  "recurringErrorNextExecutionInvalid": "Next execution date must be today or in the future.",
+  "@recurringErrorNextExecutionInvalid": {
+    "description": "Recurring transaction next execution invalid error"
+  },
+  "recurringErrorNotFound": "Recurring transaction not found.",
+  "@recurringErrorNotFound": {
+    "description": "Recurring transaction not found error"
+  },
+  "recurringErrorUnknown": "Something went wrong. Please try again.",
+  "@recurringErrorUnknown": {
+    "description": "Unknown recurring transaction error"
+  }
+}
