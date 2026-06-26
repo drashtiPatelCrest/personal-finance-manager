@@ -90,10 +90,13 @@ class ExportPage extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: AppSpacing.lg),
-                ...ExportDataType.values.map((dataType) {
+                ...ExportDataType.values.indexed.map((entry) {
+                  final index = entry.$1;
+                  final dataType = entry.$2;
                   return Padding(
                     padding: const EdgeInsets.only(bottom: AppSpacing.md),
                     child: ExportDataTypeCard(
+                      index: index,
                       dataType: dataType,
                       isPdfLoading: state.isExporting(dataType, ExportFormat.pdf),
                       isCsvLoading: state.isExporting(dataType, ExportFormat.csv),

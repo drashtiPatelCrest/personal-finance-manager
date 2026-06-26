@@ -23,13 +23,16 @@ class AppSectionHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final colorScheme = Theme.of(context).colorScheme;
+
     return Semantics(
       header: true,
       label: semanticsLabel ?? title,
       child: Padding(
         padding: padding ??
-            const EdgeInsets.symmetric(
-              vertical: AppSpacing.sm,
+            const EdgeInsets.only(
+              top: AppSpacing.sm,
+              bottom: AppSpacing.md,
             ),
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -44,6 +47,7 @@ class AppSectionHeader extends StatelessWidget {
                     AppText(
                       subtitle!,
                       variant: AppTextVariant.caption,
+                      color: colorScheme.onSurfaceVariant,
                     ),
                   ],
                 ],

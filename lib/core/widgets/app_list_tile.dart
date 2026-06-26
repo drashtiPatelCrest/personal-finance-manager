@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../theme/app_dimensions.dart';
 import '../theme/app_spacing.dart';
 
 /// A theme-aware list tile with consistent spacing and tap handling.
@@ -41,24 +42,39 @@ class AppListTile extends StatelessWidget {
       label: semanticsLabel,
       selected: selected,
       enabled: enabled,
-      child: ListTile(
-        leading: leading,
-        title: title,
-        subtitle: subtitle,
-        trailing: trailing,
-        onTap: enabled ? onTap : null,
-        onLongPress: enabled ? onLongPress : null,
-        enabled: enabled,
-        selected: selected,
-        dense: dense,
-        contentPadding: contentPadding ??
-            const EdgeInsets.symmetric(
-              horizontal: AppSpacing.lg,
-              vertical: AppSpacing.xs,
+      child: Material(
+        color: Colors.transparent,
+        child: InkWell(
+          onTap: enabled ? onTap : null,
+          onLongPress: enabled ? onLongPress : null,
+          borderRadius: BorderRadius.circular(AppDimensions.borderRadiusMd),
+          splashColor: colorScheme.primary.withValues(alpha: 0.08),
+          child: Ink(
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(AppDimensions.borderRadiusMd),
+              color: selected
+                  ? colorScheme.primaryContainer.withValues(alpha: 0.35)
+                  : null,
             ),
-        selectedTileColor: colorScheme.secondaryContainer.withValues(alpha: 0.4),
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(12),
+            child: ListTile(
+              leading: leading,
+              title: title,
+              subtitle: subtitle,
+              trailing: trailing,
+              enabled: enabled,
+              selected: selected,
+              dense: dense,
+              contentPadding: contentPadding ??
+                  const EdgeInsets.symmetric(
+                    horizontal: AppSpacing.lg,
+                    vertical: AppSpacing.sm,
+                  ),
+              shape: RoundedRectangleBorder(
+                borderRadius:
+                    BorderRadius.circular(AppDimensions.borderRadiusMd),
+              ),
+            ),
+          ),
         ),
       ),
     );

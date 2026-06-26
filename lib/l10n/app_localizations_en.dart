@@ -59,6 +59,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get dashboardQuickAddGoal => 'Add goal';
 
   @override
+  String get dashboardQuickAddCategory => 'Add category';
+
+  @override
   String get dashboardQuickViewTransactions => 'View transactions';
 
   @override

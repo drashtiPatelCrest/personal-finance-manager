@@ -69,6 +69,10 @@
   "@dashboardQuickAddGoal": {
     "description": "Dashboard quick action to add goal"
   },
+  "dashboardQuickAddCategory": "Add category",
+  "@dashboardQuickAddCategory": {
+    "description": "Dashboard quick action to add category"
+  },
   "dashboardQuickViewTransactions": "View transactions",
   "@dashboardQuickViewTransactions": {
     "description": "Dashboard quick action to view transactions"

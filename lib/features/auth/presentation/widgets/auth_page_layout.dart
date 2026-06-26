@@ -22,43 +22,62 @@ class AuthPageLayout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final colorScheme = context.colorScheme;
+
     return AppScaffold(
       body: SafeArea(
         child: Center(
           child: SingleChildScrollView(
             padding: context.horizontalPagePadding.copyWith(
-              top: AppSpacing.xl,
-              bottom: AppSpacing.xl,
+              top: AppSpacing.xxl,
+              bottom: AppSpacing.xxl,
             ),
             child: ConstrainedBox(
               constraints: const BoxConstraints(
                 maxWidth: AppDimensions.dialogMaxWidth,
               ),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: [
-                  AppText(
-                    title,
-                    variant: AppTextVariant.headlineSmall,
-                    textAlign: TextAlign.center,
-                  ),
-                  const SizedBox(height: AppSpacing.sm),
-                  AppText(
-                    subtitle,
-                    variant: AppTextVariant.bodyMedium,
-                    color: context.colorScheme.onSurfaceVariant,
-                    textAlign: TextAlign.center,
-                  ),
-                  const SizedBox(height: AppSpacing.xl),
-                  AppCard(
-                    padding: const EdgeInsets.all(AppSpacing.xl),
-                    child: child,
-                  ),
-                  if (footer != null) ...[
-                    const SizedBox(height: AppSpacing.lg),
-                    footer!,
+              child: AppFadeIn(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    Container(
+                      width: 64,
+                      height: 64,
+                      margin: const EdgeInsets.only(bottom: AppSpacing.xl),
+                      decoration: BoxDecoration(
+                        color: colorScheme.primaryContainer,
+                        borderRadius:
+                            BorderRadius.circular(AppDimensions.borderRadiusLg),
+                      ),
+                      child: Icon(
+                        Icons.account_balance_wallet_rounded,
+                        color: colorScheme.onPrimaryContainer,
+                        size: AppDimensions.iconSizeLg,
+                      ),
+                    ),
+                    AppText(
+                      title,
+                      variant: AppTextVariant.headlineSmall,
+                      textAlign: TextAlign.center,
+                    ),
+                    const SizedBox(height: AppSpacing.sm),
+                    AppText(
+                      subtitle,
+                      variant: AppTextVariant.bodyMedium,
+                      color: colorScheme.onSurfaceVariant,
+                      textAlign: TextAlign.center,
+                    ),
+                    const SizedBox(height: AppSpacing.xl),
+                    AppCard(
+                      padding: const EdgeInsets.all(AppSpacing.xl),
+                      child: child,
+                    ),
+                    if (footer != null) ...[
+                      const SizedBox(height: AppSpacing.lg),
+                      footer!,
+                    ],
                   ],
-                ],
+                ),
               ),
             ),
           ),

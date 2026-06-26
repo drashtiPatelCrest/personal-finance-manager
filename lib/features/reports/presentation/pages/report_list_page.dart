@@ -30,6 +30,7 @@ class ReportListPage extends StatelessWidget {
           final type = ReportType.values[index];
           return ReportTypeCard(
             type: type,
+            index: index,
             onTap: () => context.push(RoutePaths.reportDetailPath(type.name)),
           );
         },

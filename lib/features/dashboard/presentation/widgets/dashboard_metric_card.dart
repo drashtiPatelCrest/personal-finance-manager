@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 
+import '../../../../core/theme/app_decorations.dart';
+import '../../../../core/theme/app_dimensions.dart';
 import '../../../../core/theme/app_spacing.dart';
+import '../../../../core/theme/app_text_styles.dart';
 import '../../../../core/widgets/widgets.dart';
 
 class DashboardMetricCard extends StatelessWidget {
@@ -11,6 +14,7 @@ class DashboardMetricCard extends StatelessWidget {
     required this.icon,
     required this.color,
     this.onTap,
+    this.index = 0,
   });
 
   final String label;
@@ -18,21 +22,38 @@ class DashboardMetricCard extends StatelessWidget {
   final IconData icon;
   final Color color;
   final VoidCallback? onTap;
+  final int index;
 
   @override
   Widget build(BuildContext context) {
-    return AppCard(
-      onTap: onTap,
-      child: Padding(
-        padding: const EdgeInsets.all(AppSpacing.lg),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+    return AppFadeIn(
+      delay: Duration(milliseconds: 50 * index),
+      child: AppCard(
+        onTap: onTap,
+        child: Row(
           children: [
-            Icon(icon, color: color),
-            const SizedBox(height: AppSpacing.md),
-            AppText(label, variant: AppTextVariant.caption),
-            const SizedBox(height: AppSpacing.xs),
-            AppText(value, variant: AppTextVariant.titleMedium, color: color),
+            Container(
+              width: AppDimensions.metricIconSize,
+              height: AppDimensions.metricIconSize,
+              decoration: AppDecorations.iconBadge(color: color),
+              child: Icon(icon, color: color, size: AppDimensions.iconSizeMd),
+            ),
+            const SizedBox(width: AppSpacing.lg),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  AppText(label, variant: AppTextVariant.caption),
+                  const SizedBox(height: AppSpacing.xs),
+                  Text(
+                    value,
+                    style: AppTextStyles.moneyLarge(context, color: color),
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
       ),

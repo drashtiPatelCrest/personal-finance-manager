@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 
 import '../../../../core/l10n/l10n_extensions.dart';
-import '../../../../core/theme/app_colors.dart';
+import '../../../../core/theme/app_decorations.dart';
+import '../../../../core/theme/app_dimensions.dart';
 import '../../../../core/theme/app_spacing.dart';
+import '../../../../core/theme/app_text_styles.dart';
 import '../../../../core/widgets/widgets.dart';
 import '../../domain/entities/budget.dart';
 import '../utils/budget_localization.dart';
@@ -21,9 +23,9 @@ class BudgetProgressCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final status = usage.status;
     final progressColor = switch (status) {
-      BudgetStatus.exceeded => AppColors.expense,
-      BudgetStatus.warning => AppColors.warning,
-      BudgetStatus.normal => AppColors.income,
+      BudgetStatus.exceeded => Theme.of(context).colorScheme.error,
+      BudgetStatus.warning => Theme.of(context).colorScheme.tertiary,
+      BudgetStatus.normal => Theme.of(context).colorScheme.primary,
     };
     final progressValue = (usage.usagePercentage / 100).clamp(0.0, 1.0);
 
@@ -33,27 +35,43 @@ class BudgetProgressCard extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            AppText(
-              context.budgetStatusLabel(status),
-              variant: AppTextVariant.caption,
-              color: progressColor,
+            Container(
+              padding: const EdgeInsets.symmetric(
+                horizontal: AppSpacing.sm,
+                vertical: AppSpacing.xxs,
+              ),
+              decoration: AppDecorations.metricAccent(
+                accentColor: progressColor,
+                borderRadius: BorderRadius.circular(AppDimensions.borderRadiusFull),
+              ),
+              child: AppText(
+                context.budgetStatusLabel(status),
+                variant: AppTextVariant.caption,
+                color: progressColor,
+              ),
             ),
-            AppText(
+            Text(
               '${usage.usagePercentage.toStringAsFixed(0)}%',
-              variant: AppTextVariant.titleSmall,
-              color: progressColor,
+              style: AppTextStyles.money(context, color: progressColor),
             ),
           ],
         ),
         const SizedBox(height: AppSpacing.sm),
         ClipRRect(
-          borderRadius: BorderRadius.circular(AppSpacing.xs),
-          child: LinearProgressIndicator(
-            value: progressValue,
-            minHeight: compact ? 6 : 8,
-            backgroundColor:
-                Theme.of(context).colorScheme.surfaceContainerHighest,
-            color: progressColor,
+          borderRadius: BorderRadius.circular(AppDimensions.borderRadiusFull),
+          child: TweenAnimationBuilder<double>(
+            tween: Tween(begin: 0, end: progressValue),
+            duration: const Duration(milliseconds: 500),
+            curve: Curves.easeOutCubic,
+            builder: (context, value, _) {
+              return LinearProgressIndicator(
+                value: value,
+                minHeight: compact ? 8 : 10,
+                backgroundColor:
+                    Theme.of(context).colorScheme.surfaceContainerHighest,
+                color: progressColor,
+              );
+            },
           ),
         ),
         if (!compact) ...[

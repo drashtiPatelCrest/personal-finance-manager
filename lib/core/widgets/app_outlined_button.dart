@@ -40,6 +40,9 @@ class AppOutlinedButton extends StatelessWidget {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(AppDimensions.borderRadiusMd),
         ),
+        side: BorderSide(
+          color: Theme.of(context).colorScheme.outlineVariant,
+        ),
       ),
       child: isLoading
           ? SizedBox(

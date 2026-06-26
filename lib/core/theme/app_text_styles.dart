@@ -55,11 +55,33 @@ abstract final class AppTextStyles {
       );
 
   static TextStyle sectionHeader(BuildContext context) =>
-      titleMedium(context).copyWith(fontWeight: FontWeight.w600);
+      titleMedium(context).copyWith(
+        fontWeight: FontWeight.w600,
+        letterSpacing: -0.1,
+      );
 
   static TextStyle caption(BuildContext context) => bodySmall(context).copyWith(
         color: Theme.of(context).colorScheme.onSurfaceVariant,
       );
+
+  /// Emphasized monetary values with tabular figures.
+  static TextStyle money(BuildContext context, {Color? color}) {
+    return titleMedium(context).copyWith(
+      fontWeight: FontWeight.w700,
+      letterSpacing: -0.3,
+      color: color,
+      fontFeatures: const [FontFeature.tabularFigures()],
+    );
+  }
+
+  static TextStyle moneyLarge(BuildContext context, {Color? color}) {
+    return headlineSmall(context).copyWith(
+      fontWeight: FontWeight.w700,
+      letterSpacing: -0.4,
+      color: color,
+      fontFeatures: const [FontFeature.tabularFigures()],
+    );
+  }
 
   static BorderRadius borderRadiusSm = BorderRadius.circular(
     AppDimensions.borderRadiusSm,

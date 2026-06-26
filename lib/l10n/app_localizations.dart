@@ -190,6 +190,12 @@ abstract class AppLocalizations {
   /// **'Add goal'**
   String get dashboardQuickAddGoal;
 
+  /// Dashboard quick action to add category
+  ///
+  /// In en, this message translates to:
+  /// **'Add category'**
+  String get dashboardQuickAddCategory;
+
   /// Dashboard quick action to view transactions
   ///
   /// In en, this message translates to:

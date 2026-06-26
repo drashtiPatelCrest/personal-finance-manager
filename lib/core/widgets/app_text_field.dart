@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import '../theme/app_dimensions.dart';
+import '../theme/app_spacing.dart';
 
 /// A theme-aware text field with consistent decoration and validation support.
 class AppTextField extends StatelessWidget {
@@ -59,39 +60,52 @@ class AppTextField extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final hasError = errorText != null && errorText!.isNotEmpty;
+
     return Semantics(
       textField: true,
       label: semanticsLabel ?? label ?? hint,
-      child: TextField(
-        controller: controller,
-        focusNode: focusNode,
-        onChanged: onChanged,
-        onSubmitted: onSubmitted,
-        onTap: onTap,
-        keyboardType: keyboardType,
-        textInputAction: textInputAction,
-        obscureText: obscureText,
-        readOnly: readOnly,
-        enabled: enabled,
-        autofocus: autofocus,
-        maxLines: maxLines,
-        minLines: minLines,
-        maxLength: maxLength,
-        inputFormatters: inputFormatters,
-        textCapitalization: textCapitalization,
-        decoration: InputDecoration(
-          labelText: label,
-          hintText: hint,
-          helperText: helperText,
-          errorText: errorText,
-          prefixIcon: prefixIcon,
-          suffixIcon: suffixIcon,
-          contentPadding: const EdgeInsets.symmetric(
-            horizontal: 16,
-            vertical: 14,
-          ),
-          border: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(AppDimensions.borderRadiusMd),
+      child: AnimatedContainer(
+        duration: const Duration(milliseconds: 200),
+        curve: Curves.easeOutCubic,
+        child: TextField(
+          controller: controller,
+          focusNode: focusNode,
+          onChanged: onChanged,
+          onSubmitted: onSubmitted,
+          onTap: onTap,
+          keyboardType: keyboardType,
+          textInputAction: textInputAction,
+          obscureText: obscureText,
+          readOnly: readOnly,
+          enabled: enabled,
+          autofocus: autofocus,
+          maxLines: maxLines,
+          minLines: minLines,
+          maxLength: maxLength,
+          inputFormatters: inputFormatters,
+          textCapitalization: textCapitalization,
+          style: theme.textTheme.bodyLarge,
+          decoration: InputDecoration(
+            labelText: label,
+            hintText: hint,
+            helperText: helperText,
+            errorText: errorText,
+            prefixIcon: prefixIcon,
+            suffixIcon: suffixIcon,
+            filled: true,
+            fillColor: hasError
+                ? theme.colorScheme.errorContainer.withValues(alpha: 0.15)
+                : theme.inputDecorationTheme.fillColor,
+            contentPadding: const EdgeInsets.symmetric(
+              horizontal: AppSpacing.lg,
+              vertical: AppSpacing.md,
+            ),
+            border: OutlineInputBorder(
+              borderRadius:
+                  BorderRadius.circular(AppDimensions.borderRadiusMd),
+            ),
           ),
         ),
       ),

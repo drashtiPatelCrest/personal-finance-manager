@@ -33,14 +33,21 @@ class AppIconButton extends StatelessWidget {
       label: tooltip,
       selected: isSelected,
       enabled: onPressed != null,
-      child: IconButton(
+      child: IconButton.filledTonal(
         onPressed: onPressed,
         tooltip: tooltip,
         icon: Icon(icon, size: size),
-        color: color ?? colorScheme.onSurfaceVariant,
+        color: color ?? colorScheme.onSurface,
         style: IconButton.styleFrom(
+          minimumSize: const Size(
+            AppDimensions.minTouchTarget,
+            AppDimensions.minTouchTarget,
+          ),
           backgroundColor: backgroundColor ??
-              (isSelected ? colorScheme.secondaryContainer : null),
+              (isSelected
+                  ? colorScheme.primaryContainer
+                  : colorScheme.surfaceContainerHighest
+                      .withValues(alpha: 0.7)),
         ),
       ),
     );

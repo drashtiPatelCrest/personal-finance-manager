@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../../../core/theme/app_decorations.dart';
+import '../../../../core/theme/app_dimensions.dart';
 import '../../../../core/theme/app_spacing.dart';
 import '../../../../core/widgets/widgets.dart';
 import '../../domain/entities/financial_report.dart';
@@ -10,20 +12,30 @@ class ReportTypeCard extends StatelessWidget {
     super.key,
     required this.type,
     required this.onTap,
+    this.index = 0,
   });
 
   final ReportType type;
   final VoidCallback onTap;
+  final int index;
 
   @override
   Widget build(BuildContext context) {
-    return AppCard(
-      onTap: onTap,
-      child: Padding(
-        padding: const EdgeInsets.all(AppSpacing.lg),
+    final colorScheme = Theme.of(context).colorScheme;
+    final icon = _iconForType(type);
+
+    return AppFadeIn(
+      delay: Duration(milliseconds: 60 * index),
+      child: AppCard(
+        onTap: onTap,
         child: Row(
           children: [
-            Icon(_iconForType(type)),
+            Container(
+              width: AppDimensions.metricIconSize,
+              height: AppDimensions.metricIconSize,
+              decoration: AppDecorations.iconBadge(color: colorScheme.primary),
+              child: Icon(icon, color: colorScheme.primary),
+            ),
             const SizedBox(width: AppSpacing.lg),
             Expanded(
               child: Column(
@@ -41,7 +53,10 @@ class ReportTypeCard extends StatelessWidget {
                 ],
               ),
             ),
-            const Icon(Icons.chevron_right),
+            Icon(
+              Icons.chevron_right_rounded,
+              color: colorScheme.onSurfaceVariant,
+            ),
           ],
         ),
       ),

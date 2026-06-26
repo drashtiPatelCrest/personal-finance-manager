@@ -78,7 +78,7 @@ class DashboardPage extends StatelessWidget {
 
   Widget _buildBody(BuildContext context, DashboardState state) {
     if (state.isLoading && state.snapshot == null) {
-      return const AppLoadingIndicator();
+      return const AppDashboardSkeleton();
     }
 
     if (state.isFailure && state.snapshot == null) {
@@ -226,6 +226,7 @@ class DashboardPage extends StatelessWidget {
         final isWide = constraints.maxWidth >= 600;
         final children = [
           DashboardMetricCard(
+            index: 0,
             label: l10n.dashboardTotalIncomeLabel,
             value: context.formatCurrency(snapshot.totalIncome),
             icon: Icons.trending_up,
@@ -233,6 +234,7 @@ class DashboardPage extends StatelessWidget {
             onTap: () => context.push(RoutePaths.transactions),
           ),
           DashboardMetricCard(
+            index: 1,
             label: l10n.dashboardTotalExpenseLabel,
             value: context.formatCurrency(snapshot.totalExpense),
             icon: Icons.trending_down,
@@ -240,6 +242,7 @@ class DashboardPage extends StatelessWidget {
             onTap: () => context.push(RoutePaths.transactions),
           ),
           DashboardMetricCard(
+            index: 2,
             label: l10n.dashboardTotalSavingsLabel,
             value: context.formatCurrency(snapshot.totalSavings),
             icon: Icons.savings_outlined,
@@ -247,6 +250,7 @@ class DashboardPage extends StatelessWidget {
             onTap: () => context.push(RoutePaths.goals),
           ),
           DashboardMetricCard(
+            index: 3,
             label: l10n.dashboardNetBalanceLabel,
             value: context.formatCurrency(snapshot.netBalance),
             icon: Icons.account_balance_wallet_outlined,
@@ -284,19 +288,15 @@ class DashboardPage extends StatelessWidget {
     required String title,
     required VoidCallback onViewAll,
   }) {
-    return Row(
-      children: [
-        Expanded(
-          child: AppText(title, variant: AppTextVariant.titleSmall),
+    return AppSectionHeader(
+      title: title,
+      trailing: TextButton(
+        onPressed: onViewAll,
+        child: AppText(
+          context.l10n.dashboardViewAllAction,
+          variant: AppTextVariant.bodyMedium,
         ),
-        TextButton(
-          onPressed: onViewAll,
-          child: AppText(
-            context.l10n.dashboardViewAllAction,
-            variant: AppTextVariant.bodyMedium,
-          ),
-        ),
-      ],
+      ),
     );
   }
 }
